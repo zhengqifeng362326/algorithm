@@ -5,7 +5,6 @@
         <sider-bar></sider-bar>
       </el-aside>
       <el-container>
-        <el-header>Header</el-header>
         <el-main>
           <div>
             <router-view></router-view>
@@ -68,7 +67,6 @@ li {
   background: #f0f2f5;
   & > div {
     height: 100%;
-    padding: 16px;
     border-radius: 4px;
     background: #fff;
     color: #333;

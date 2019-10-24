@@ -41,6 +41,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import ShortPathCls from './js/shortPath'
+import './js/coinSettle'
 
 @Component
 export default class extends Vue {

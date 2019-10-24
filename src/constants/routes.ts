@@ -12,7 +12,8 @@ export const routeMenus = [{
   }, {
     name: 'coinSettle',
     cnName: '硬币找零',
-    path: 'coinSettle'
+    path: 'coinSettle',
+    componentPath: () => import('../components/DynamicPlanning/CoinSettle.vue')
   }]
 }, {
   name: 'greedyAlgorithm',

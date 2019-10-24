@@ -11,7 +11,7 @@
       <el-submenu v-if="'children' in menu" :key="menu.name" :index="menu.name">
         <template slot="title">
           <i :class="menu.icon"></i>
-          <span>{{menu.cnName}}</span>
+          <span>{{$cnName[menu.name]}}</span>
         </template>
         <el-menu-item
           v-for="childMenu in menu.children"
@@ -20,11 +20,11 @@
           :index="childMenu.name"
           :disabled="activeIndex === childMenu.name"
         >
-          <span>{{childMenu.cnName}}</span>
+          <span>{{$cnName[childMenu.name]}}</span>
         </el-menu-item>
       </el-submenu>
       <el-menu-item v-else :key="menu.name" :route="menu.path" :index="menu.name" :disabled="activeIndex === childMenu.name">
-        <span slot="title">{{menu.cnName}}</span>
+        <span slot="title">{{$cnName[menu.name]}}</span>
       </el-menu-item>
     </template>
   </el-menu>
