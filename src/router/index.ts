@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 import { routeMenus } from '../constants/routes'
 
 Vue.use(VueRouter)
@@ -19,21 +18,7 @@ const analysisMenus: (menus: any[]) => any[] = menus => menus.map(item => {
   }
 })
 
-const routes: any[] = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home,
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
-  }
-]
+const routes: any[] = []
 
 routes.push(...analysisMenus(routeMenus))
 
