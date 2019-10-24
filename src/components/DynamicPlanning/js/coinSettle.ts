@@ -1,5 +1,5 @@
 interface CoinSettleInter {
-  coinKinds: number[];
+  coinKinds: number[]
   getCoinAccount: (deno: number, coinKinds: number[]) => number
 }
 

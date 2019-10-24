@@ -53,7 +53,7 @@ export default class CoinSettle extends Vue {
   public inputValue: number | string = ''
 
   public handleClose(tag: number) {
-    this.coinSettle.coinKinds.splice(this.coinSettle.coinKinds.indexOf(tag), 1);
+    this.coinSettle.coinKinds.splice(this.coinSettle.coinKinds.indexOf(tag), 1)
   }
 
   public showInput(): void {
